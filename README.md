@@ -6,7 +6,7 @@ A collection of reusable [Agent Skills](https://docs.claude.com/en/docs/agents-a
 
 | Skill | What it does |
 |---|---|
-| _coming soon_ | |
+| [`resume-for-job`](resume-for-job/SKILL.md) | Picks which of your resume versions to send for a job posting, suggests safe tailoring, and flags gaps. Works from an audited fact inventory so nothing gets exaggerated. |
 
 ## Structure
 
