@@ -95,12 +95,30 @@ Give every table column a sensible minimum width and allow horizontal scrolling.
 - **Impact:** clicking a table, column or event lists and highlights every service and flow that reads, writes, publishes or consumes it. It answers "if I change this, what is affected?".
 - **Guided tour:** a route of 5 to 7 steps for someone new to the team, reusing existing screens (home, one application card, one journey, one animated flow, the glossary).
 
+## Look at the result before saying it is done
+
+Reading the HTML is not enough to know a screen works. After building the visualizer, and after each stage of a reorganization, look at it.
+
+- Open the visualizer in a browser with whatever browser or screenshot tool the session has, and take a screenshot of every screen you changed.
+- Take them at two sizes: a large desktop window and a laptop-sized one (about 1366 by 768). Broken layouts usually show only at the smaller size.
+- For an animated flow, capture the first step, one step in the middle and the last step.
+- In each screenshot, check that:
+  - the diagram fills the available space and nothing is cut off or overlapping;
+  - no label is truncated to the point of being unreadable, and no table column wraps text letter by letter;
+  - the screen opens with at most one sentence of text;
+  - the checklist items for that stage are met.
+- Fix what you find and take the screenshot again. Do not report a stage as done with a known visual defect.
+- In the stage summary, show the screenshots or say what you saw in them.
+- If the session has no way to open a browser or take a screenshot, say so plainly and ask the user to check the screen. Never claim a screen looks right without having seen it.
+
+Screenshots of a real system show real service, table and column names. Keep them inside the project; do not attach them anywhere outside it.
+
 ## When reorganizing an existing visualizer
 
 - Do not redo the extraction and do not reread service code. Work only on the visualizer and the JSONs that already exist.
 - If a change needs data the JSONs do not have, do not invent it: list it in `mapa/duvidas.md`. That list becomes the scope of the next extraction wave.
 - Redirect the URLs of removed views to the views that replaced them.
-- Work in stages, in the order of this file's sections. After each stage, stop, say what changed in at most 5 lines and wait for the user to confirm. The first two (one page per flow, and the home) remove most of the confusion, so the user can judge after them whether the rest is worth the tokens.
+- Work in stages, in the order of this file's sections. After each stage, check the result on screen (see "Look at the result before saying it is done"), then stop, say what changed in at most 5 lines and wait for the user to confirm. The first two (one page per flow, and the home) remove most of the confusion, so the user can judge after them whether the rest is worth the tokens.
 - At the end, update `mapa/README.md` with the new structure.
 
 ## Checklist
@@ -115,3 +133,4 @@ Give every table column a sensible minimum width and allow horizontal scrolling.
 - [ ] Every code shows its glossary meaning or a "to be defined" marker
 - [ ] Events, Data and APIs are searchable tables
 - [ ] No table column wraps text letter by letter
+- [ ] Every changed screen was checked in a screenshot at two window sizes
