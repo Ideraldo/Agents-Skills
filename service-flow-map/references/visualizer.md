@@ -2,6 +2,8 @@
 
 Build only after the pilot is validated.
 
+This file lists what the visualizer must contain. Read `viewer-guidelines.md` before building: it says how to organize the views so the result stays readable as the map grows.
+
 Build `mapa/visualizador/index.html`: a single page, no build step, that reads the JSONs in `mapa/`. No external CDN dependencies (plain JavaScript, CSS and SVG, or libraries already approved by the organization). The visualizer is generic: swapping the JSONs swaps the content.
 
 ## Three zoom levels

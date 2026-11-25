@@ -75,6 +75,7 @@ The text documentation feeds the description of each service in the visual.
 
 - JSON formats for services, flows, glossary and doubts: `references/output-formats.md`
 - Visualizer specification (Phase 5, after the pilot is validated): `references/visualizer.md`
+- How to organize the visualizer so it stays readable, and what to do when the user says an existing one is confusing: `references/viewer-guidelines.md`
 
 ## Validation and maintenance
 
