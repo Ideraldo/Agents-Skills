@@ -1,4 +1,4 @@
-# skills
+# Agents-Skills
 
 A collection of reusable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) for Claude, built from real workflows and versioned here.
 
