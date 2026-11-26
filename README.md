@@ -4,18 +4,13 @@ A collection of reusable [Agent Skills](https://docs.claude.com/en/docs/agents-a
 
 ## Skills
 
+Most of the agentic-coding skills below come from a review of ~150 talks and videos, 25 papers and Anthropic's own writing on coding agents (Jun to Nov 2026). The common thread: generating code is cheap; what matters is that the agent proves its work and that every correction becomes an automatic check.
+
 | Skill | What it does |
 |---|---|
 | [`resume-for-job`](resume-for-job/SKILL.md) | Picks which of your resume versions to send for a job posting, suggests safe tailoring, and flags gaps. Works from an audited fact inventory so nothing gets exaggerated. |
 | [`sql-queries`](sql-queries/SKILL.md) | Two-stage T-SQL helper for SQL Server: agrees on what to fetch before writing any SQL, handles JSON columns, and wraps every UPDATE in a reviewable transaction. Includes a setup guide for schema files and JSON examples. |
 | [`service-flow-map`](service-flow-map/SKILL.md) | Maps a microservice system into versioned JSON and an interactive visual that animates a data flow from a UI click to the last database write. Orchestrator plus sub-agents, script-first to save tokens. |
-
-### Agentic coding workflow
-
-Built from a review of ~150 talks and videos, 25 papers and Anthropic's own writing on coding agents (Jun to Nov 2026). The common thread: generating code is cheap; what matters is that the agent proves its work and that every correction becomes an automatic check.
-
-| Skill | What it does |
-|---|---|
 | [`verify-work`](verify-work/SKILL.md) | Runs the real system and checks every acceptance criterion, including what must not change, returning an evidence table. No evidence, no "done". |
 | [`correction-to-check`](correction-to-check/SKILL.md) | Turns each correction you give an agent into the strongest enforceable form (type, lint/analyzer, architecture test, hook, deny rule) instead of another CLAUDE.md line, and logs it. |
 | [`spec-interview`](spec-interview/SKILL.md) | The agent interviews you with multiple-choice questions until it can write a short SPEC.md with testable acceptance criteria. Fits SDD and BMAD flows. |
